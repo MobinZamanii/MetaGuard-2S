@@ -5,15 +5,20 @@ This directory contains the visual and quantitative evidence of the **MetaGuard-
 ## 📈 Performance Evolution
 We tracked the model's improvement across different development phases:
 
-### Phase 1: Hybrid Stage (XGB + RF + StatMap)
-* **Status:** High Sensitivity, but significant False Negatives.
-* **Key Metric:** Identified **907** Metastasis cases.
-* **Visual:** `results/plots/confusion_matrix_hybrid.png`
+## 📊 Clinical Validation Results
 
-### Phase 2: Final Stacking (MetaGuard-3S)
-* **Status:** Optimized for clinical reliability.
-* **Key Metric:** Identified **988** Metastasis cases.
-* **Visual:** `results/plots/confusion_matrix_final.png`
+We evaluated the model's performance in two distinct phases to measure the impact of the Meta-Stacking architecture:
+
+### 🔹 Phase 1: Hybrid Base Ensemble (XGB + RF + StatMap)
+* **Status:** High sensitivity but limited by high False Negatives in borderline cases.
+* **Detection Performance:** Successfully identified **907** metastasis cases.
+* **Artifact:** `results/plots/confusion_matrix_hybrid.png`
+
+### 🔹 Phase 2: Final Stacking Layer (MetaGuard-3S / LR Meta-Learner)
+* **Status:** Fully optimized for clinical reliability using Logistic Regression to calibrate probabilities.
+* **Detection Performance:** Successfully identified **988** metastasis cases.
+* **Key Improvement:** Caught an additional **81 patients** through the stacking process alone, before the Safety Net review.
+* **Artifact:** `results/plots/confusion_matrix_final.png`
 
 ## 🛡️ Safety Net Impact
 The most critical result of this study is the **Uncertainty-Aware triage**.
