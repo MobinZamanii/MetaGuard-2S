@@ -1,8 +1,8 @@
-# 🤖 Model Architecture & Specifications
+# Model Architecture & Specifications
 
 This directory outlines the technical configuration of the **MetaGuard-3S** stacking ensemble. Our approach leverages the diverse learning biases of different algorithms to maximize sensitivity in metastasis detection.
 
-## 🏗️ The Triple-Stage Architecture
+## The Triple-Stage Architecture
 
 ### Stage 1: Gradient Boosting (XGBoost)
 * **Role:** Primary non-linear pattern extractor.
