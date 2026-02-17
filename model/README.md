@@ -1,6 +1,6 @@
 # Models Folder
 
-Contains the trained **MetaGuard-3S** models for cancer metastasis prediction.
+Contains the trained **MetaGuard-2S** models for cancer metastasis prediction.
 
 ## Files
 - `hybrid_rf_final.pkl` – Final Hybrid Random Forest model with Group_Met_Rate feature.
