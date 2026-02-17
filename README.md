@@ -5,11 +5,9 @@ A **Hybrid Stacking Ensemble (XGBoost + Random Forest)** for Cancer Metastasis P
 
 ---
 
-## 🌟 Key Innovations
-
 > Note: Logistic Regression has been removed in the current version due to limited additional benefit.
 
-### 2. Probabilistic Safety-Net (Uncertainty-Aware)
+### Probabilistic Safety-Net (Uncertainty-Aware)
 A **Human-in-the-loop protocol** flags borderline predictions for expert review.  
 * **Review Zone:** $[T - \delta, T + \delta]$, where $T$ is the model threshold and $\delta$ is a tunable uncertainty margin (e.g., 0.10).  
 * This ensures that potential false negatives are caught before clinical decisions.
